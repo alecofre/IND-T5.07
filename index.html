@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 5.7</title>
+    <!--link bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.css"/>
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    
+    <!--CSS propio-->
+    <!-- <link rel="stylesheet" href="{% static 'tv_show_app/css/my_styles.css' %}"> -->
+    <!-- <link rel="icon" type="image/ico" href="{% static 'tv_show_app/img/old_tv.png' %}"> -->
+    <!-- JS Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+
+    <title>Tarea 5.7</title>
+</head>
+<body>
+<div class="container container-fluid">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link btn btn-success text-light ms-1 me-1" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn btn-success text-dark ms-1 me-1" href="#titulo">TITULO</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link btn btn-success text-dark ms-1 me-1" href="#description">DESCRIPCIONES</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link btn btn-success text-dark ms-1 me-1" href="#images">IMAGENES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn btn-success text-light ms-1 me-1" href="contacto.html">COMMENTS</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>    
+
+    <header class="bg-danger text-light text-center mt-2 mb-2">
+        <h1>Mi Sitio</h1>
+    </header>
+
+    <section id="titulo">
+        <div class="row mt-2 mb-2">
+            <div class="col-md-2 col-md-offset-2"></div>
+            <div class="col-12 col-md-6 text-center card border-success">
+                <h3 class="card-header"><strong>VISTAS ESPECTACULARES</strong></h3>
+                <p class="card-body align-middle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex repudiandae voluptatem facilis rerum quo laudantium distinctio quidem autem, voluptatum odio dolore minus corrupti. Illum, vero.</p>
+                <h5 class="card-footer">disfrute la naturaleza</h5>
+            </div>
+            <div class="col-12 col-md-4 text-center">
+                <img src="/assets/img/pexels-brunno-rodrigues-9318388.jpg" alt="" width="50%" class="rounded-circle">
+            </div>
+        </div>
+    </section>
+
+    <section id="description">
+        <div id="accordion"  class="mt-2">
+            <div class="card">
+                <h2 class="text-center text-info">DESCRIPCIONES</h2>
+                <div class="card-header">
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                    Descripción de las montañas
+                    </a>
+                </div>
+                <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                    <div class="card-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur blanditiis quaerat dolorem sunt quos perferendis ipsa voluptatem incidunt? Repellat, eaque.</p>
+                    </div>
+                </div>
+            </div>
+          
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+                        Descripción de los bosques
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quidem aliquam perspiciatis iure aut quo natus est voluptatum consequuntur libero!
+                    </div>
+                </div>
+            </div>
+          
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                        Descripción de los lagos
+                    </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime perspiciatis eaque veritatis, ipsam dolore dolorum amet quod necessitatibus veniam dolores.
+                    </div>
+                </div>
+            </div>
+          </div> 
+    </section>
+
+    <section id="images">
+        <h2 class="text-center text-success mt-3">IMAGENES</h2>
+        <div class="row">
+        <div class="col-lg-2"></div>
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide col-12 col-lg-8" data-bs-ride="carousel">
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="6"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="7"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="8"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="9"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="10"></button>
+            </div>
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/assets/img/pexels-archie-binamira-913215.jpg" alt="montaña" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Montaña o Volcán?</h3>
+                        <p>Las nubes hacen parecerla como un volcán</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/img/pexels-james-wheeler-417074.jpg" alt="lago" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Montaña, Lago y Bosque</h3>
+                        <p>Las tres vistas a la vez!!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/img/pexels-lumn-167698.jpg" alt="lago" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Bosque</h3>
+                        <p>En la profundidad boscosa</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/img/pexels-mali-maeder-142497.jpg" alt="montaña" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Bosque Húmedo</h3>
+                        <p>El verde domina todo</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/img/pexels-pixabay-247600.jpg" alt="lago" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Lago</h3>
+                        <p>Una amplia vista</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/img/pexels-pixabay-417173.jpg" alt="lago" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>La Montaña</h3>
+                        <p>El pico de la montaña</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/img/pexels-quang-nguyen-vinh-2166711.jpg" alt="montaña" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Lago Navegable</h3>
+                        <p>Una vuelta al lago?</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/img/pexels-quang-nguyen-vinh-2172499.jpg" alt="lago" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Lago</h3>
+                        <p>Qué apacible!!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/img/pexels-sebastian-palomino-1955134.jpg" alt="lago" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Montaña</h3>
+                        <p>El final del camino</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/img/pexels-veeterzy-38136.jpg" alt="lago" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Bosque</h3>
+                        <p>El árbol de los ancestros</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+    </section>
+
+    <footer>
+        <div class="row mt-4">
+            <div class="col-4 col-md-4"></div>
+            <table class="col-12 col-md-4 bg-light text-center">
+                <tr>
+                    <td><i class="fab fa-twitter-square"></i></td>
+                    <td><i class="fab fa-instagram-square"></i></td>
+                    <td><i class="fab fa-linkedin"></i></td>
+                    <td><i class="fab fa-github-square"></i></td>
+                    <td><i class="fab fa-discord"></i></td>
+                </tr>
+            </table>
+        </div>
+    </footer>
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.js"></script>
+        
+</body>
+</html>
